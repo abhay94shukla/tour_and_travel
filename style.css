@@ -1,0 +1,151 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation bar: logo and image */
+#logo {
+    margin: 1px 5px;
+}
+
+#logo img {
+    height: 42px;
+    margin: 20px 20px;
+}
+
+/* navigation bar: list styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 13px 26px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 4px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('image/maldives-1993704__480.jpg') no-repeat center center/cover;
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    /* font-size: 1.5rem; */
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: calibri;
+}
+
+/* Services section */
+#services {
+
+    margin: 10px 5px;
+    display:inline-flex;
+}
+
+#services .box {
+    border: 2px solid rgb(202, 86, 13);
+padding: 5px;
+margin: 3px 2px;
+}
+
+#services .box img {
+    margin: auto;
+    display: block;
+    height: 235px;
+
+}
+
+#services {}
+
+/* utility class */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    margin: auto;
+    display: block;
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: 2px solid rgb(13, 112, 232);
+    background-color: rgb(81, 154, 165);
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 39px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
